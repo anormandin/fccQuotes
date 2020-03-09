@@ -4,16 +4,19 @@ import { Button, Segment, Card, Grid } from 'semantic-ui-react'
 
 
 function QuoteHeader() {
+    const options = {
+        weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
+    }
+    const date = new Intl.DateTimeFormat('default', options).format(new Date());
     return (
         <Card.Content>
             <Card.Header>
                 Quote of the day
-                </Card.Header>
+            </Card.Header>
             <Card.Meta>
-                12 janver 2019
-                </Card.Meta>
+                <span style={{ textTransform: 'capitalize' }}>{date}</span>
+            </Card.Meta>
         </Card.Content>
-
     )
 };
 

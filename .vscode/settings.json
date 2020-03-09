@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/985d191c-adbd-43af-b9f9-51d4a3dc14f4/resourceGroups/fcc/providers/Microsoft.Web/sites/fccquotes",
+    "appService.deploySubpath": "build"
+}
